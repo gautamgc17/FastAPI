@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+   <body>
+        {% for i in range %}
+            <h2>Hello {{username}} Welcome to FastAPI</h2>
+            <img src="{{ url_for('static', path='images/my_photo.jpg') }}" alt="" width="100">
+        {% endfor %}    
+    </body>
+</html>
